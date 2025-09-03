@@ -27583,6 +27583,7 @@ async function analyze(workingDirectory) {
 
   const args = ['--format', 'machine'];
   args.push('.');
+  args.push('--no-use-aot-snapshot');
 
   await exec.exec('dart analyze', args, options);
 
